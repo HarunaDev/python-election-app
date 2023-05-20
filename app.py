@@ -17,3 +17,9 @@ poll = {
         "Peter Obi": 0,
     }
 }
+
+# Display Party to voters
+parties = poll.keys()
+print("Vote a running party\n")
+for party in parties:
+    print(party)
