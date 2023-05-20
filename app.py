@@ -18,8 +18,15 @@ poll = {
     }
 }
 
+# get registered voters
+getRegisteredVoters = int(input("Enter number of registered voters"))
+
 # Display Party to voters
 parties = poll.keys()
 print("Vote a running party\n")
 for party in parties:
     print(party)
+
+# Get vote choice from voters
+vote = input("Choose your party: ")
+
