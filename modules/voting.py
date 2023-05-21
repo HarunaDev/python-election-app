@@ -10,3 +10,15 @@ def get_votes():
     # Get vote choice from voters
     vote = input("Choose your party: ")
     print("Thank you for voting")
+
+    # update polls
+    # polls = polling.poll
+    if vote in polling.poll:
+        print("vote added")
+        updatePollVote = polling.poll[vote]
+        try:
+            updatePollVote = updatePollVote + 1
+        except Exception as e:
+            print(f"{e}")
+        else:
+            print(polling.poll)
