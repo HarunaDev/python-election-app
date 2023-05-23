@@ -15,8 +15,9 @@ def get_votes():
     # polls = polling.poll
     if vote in polling.poll:
         print("vote added")
-        updatePollVote = polling.poll[vote].keys()
-        print(updatePollVote)
+        polling.poll[vote]['Peter Obi'] += 1
+        print(polling.poll)
+
         # try:
         #     updatePollVote = updatePollVote + 1
         # except Exception as e:
