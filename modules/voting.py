@@ -15,10 +15,11 @@ def get_votes():
     # polls = polling.poll
     if vote in polling.poll:
         print("vote added")
-        updatePollVote = polling.poll[vote]
-        try:
-            updatePollVote = updatePollVote + 1
-        except Exception as e:
-            print(f"{e}")
-        else:
-            print(polling.poll)
+        updatePollVote = polling.poll[vote].keys()
+        print(updatePollVote)
+        # try:
+        #     updatePollVote = updatePollVote + 1
+        # except Exception as e:
+        #     print(f"{e}")
+        # else:
+        #     print(polling.poll)
