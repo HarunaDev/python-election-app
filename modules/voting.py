@@ -25,7 +25,7 @@ def get_votes():
             polling.poll[vote]['John Doe'] += 1
         elif vote.upper() == "APC":
             polling.poll[vote]['Karen Joy'] += 1
-        print(polling.poll)
+        return polling.poll
 
         # try:
         #     updatePollVote = updatePollVote + 1
